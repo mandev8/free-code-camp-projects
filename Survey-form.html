@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+  <title></title>
+    <style>
+      .background {
+        background-image: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+        background-attachment: fixed;
+      }
+.form-group {
+  margin: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 1.5rem;
+}
+.field-length {
+  width: 90%;
+  height: 2.5rem;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 5px;
+}
+
+    </style>
+</head>
+<body class="background">
+  <div style="text-align: center; padding-top: 5%">
+<header><h1 style="color: green" id= "title">FreeCodeCamp Survey Form</h1></header>
+<p style="font-size: 20px; color: green" id= "description"><b><i>Thank you for taking the time to help us improve the platform</i></b></p>
+</div >
+<form class="form-group" style="background: gold" id= "survey-form">
+<br>
+<p>Name</p>
+  <label id= "name-label" for="name">
+<input class="field-length" id= "name" placeholder="Enter your name" type="text" name="Name" required><br/>
+    This is the field for name
+</label>
+<p>Email</p>
+  <label id= "email-label" for="email">
+<input class="field-length" id= "email" placeholder="Enter your email" type="email" name="Email" required><br/>
+    This is the field for email
+</label>
+<p>Age (optional)</p>
+  <label id= "number-label" for="number">
+<input class="field-length" id= "number" min="10" max="40" placeholder="Age" type="number" name="Age"><br/>
+    This is the field for age
+</label>
+<p>Which option best describes your current role?</p>
+<label id= "role-label" for="role"></label>
+<select class="field-length" id= "dropdown">
+<option value="Student">Student</option>
+<option value="Full time job">Full time job</option>
+<option value="Full time learner">Full time learner</option>
+<option value="Prefer not to say">Prefer not to say</option>
+<option value="Others">Others</option>
+</select>
+<p>Would you recommend freeCodeCamp to a friend?</p>
+<label for="my radio"></label>
+<input type="radio" name="my radio" value= "definitely"><span style="font-size: 18px">Definitely</span> <br>
+<input type="radio" name="my radio" value= "may be"><span style="font-size: 18px">Maybe</span> <br>
+<input type="radio" name="my radio" value= "not sure"><span style="font-size: 18px">Not sure</span> <br>
+
+<p>What is your favorite feature of freeCodeCamp</p>
+<label id= "feature-label" for="dropdown2"></label>
+<select class="field-length" id= "dropdown2">
+<option value="">Challenges</option>
+<option value="Full time job">Projects</option>
+<option value="Full time learner">Commuinity</option>
+<option value="Prefer not to say">Open source</option>
+<option value="Others">Others</option>
+</select>
+
+<br>
+<p>What would you like to see improved? (Check all that apply)</p>
+<label for=""></label>
+<input type="checkbox" name="my checkbox" value="Front-end Projects"><span style="font-size: 18px">Front-end Projects</span><br>
+<input type="checkbox" name="my checkbox" value="Back-end Projects"><span style="font-size: 18px">Back-end Projects</span><br>
+<input type="checkbox" name="my checkbox" value="Data Visualization"><span style="font-size: 18px">Data Visualization</span><br>
+<input type="checkbox" name="my checkbox" value="Challenges"><span style="font-size: 18px">Challenges</span><br>
+<input type="checkbox" name="my checkbox" value="Open Source Commuinity"><span style="font-size: 18px">Open Source Commuinity</span><br>
+<input type="checkbox" name="my checkbox" value="Gitter help rooms"><span style="font-size: 18px">Gitter help rooms</span><br>
+<input type="checkbox" name="my checkbox" value="Videos"><span style="font-size: 18px">Videos</span><br>
+<input type="checkbox" name="my checkbox" value="City Meetups"><span style="font-size: 18px">City Meetups</span><br>
+<input type="checkbox" name="my checkbox" value="Wiki"><span style="font-size: 18px">Wiki</span><br>
+<input type="checkbox" name="my checkbox" value="Forum"><span style="font-size: 18px">Forum</span><br>
+<input type="checkbox" name="my checkbox" value="Additional Courses"><span style="font-size: 18px">Additional Courses</span>
+<p>Any comments or suggestions?</p>
+<textarea placeholder="Enter your comment here..." name="textarea" rows="8" cols="80"></textarea>
+  <br>
+<button id= "submit"  style="margin: 5% 5% 5% auto; width: 100%; height: 45px; background-color: green; color: white" class="field-length" type="Submit" name="button" value= "submit"><span style="font-size: 20px">Submit</span></button>
+</form>
+</body>
+
+
+
+</html>
